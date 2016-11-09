@@ -4,7 +4,7 @@
 
     function formatSizeUnits($bytes)
     {
-        if ($bytes >= 1073741824){
+        if($bytes >= 1073741824){
             $bytes = number_format($bytes / 1073741824, 2) . ' GB';
         }elseif ($bytes >= 1048576){
             $bytes = number_format($bytes / 1048576, 2) . ' MB';
@@ -18,8 +18,8 @@
             $bytes = '0 bytes';
         }
         return $bytes;
-    }    
-    
+    }
+
     if( isset($_FILES['userfile']) ){
         $errors= array();
         $file_name = $_FILES['userfile']['name'];
@@ -52,14 +52,14 @@
         <script type="text/javascript" src="js/materialize.min.js"></script>
         <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <style>
 
         </style>
     </head>
-    <body>    
-        <div class="row" style="padding:30px;"> 
+    <body>
+        <div class="row" style="padding:30px;">
             <div class="col s12">
                 <form enctype="multipart/form-data" method="post" id="upload_form">
                     <div class="form-group">
@@ -81,7 +81,7 @@
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4"><?php echo pathinfo($file_name,PATHINFO_FILENAME);?><i class="material-icons right">more_vert</i></span>
                             <div class="show_panel">
-                                <?php                                
+                                <?php
                                     switch ( $file_extension ){
                                         case 'jpeg':
                                         case 'jpg':
