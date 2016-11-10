@@ -79,7 +79,7 @@
                 <div class="col s2">
                     <div class="card">
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4"><?php echo pathinfo($file_name,PATHINFO_FILENAME);?><i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4"><?php echo pathinfo($file_name,PATHINFO_FILENAME);?><i class="material-icons right"></i></span>
                             <div class="show_panel">
                                 <?php
                                     switch ( $file_extension ){
@@ -118,7 +118,7 @@
                 <div class="col s12">
                     <div class="card">
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4"><?php echo pathinfo($file_name,PATHINFO_FILENAME);?><i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4"><?php echo pathinfo($file_name,PATHINFO_FILENAME);?><i class="material-icons right"></i></span>
                             <div class="show_panel">
                                 <table>
                                     <?php
