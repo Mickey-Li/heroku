@@ -90,7 +90,7 @@
                                             echo "<img src='" . $file_name ."'>";
                                             break;
                                         case 'txt':
-                                            echo "<pre style='color:black;'>" . file_get_contents($file_name) . "</pre>";
+                                            echo "<pre style='color:black;padding:15px;'>" . file_get_contents($file_name) . "</pre>";
                                             break;
                                         default:
                                     }
